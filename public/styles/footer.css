@@ -1,0 +1,17 @@
+@media (min-width: 300px) {
+  footer {
+    background: white;
+    height: 50svh;
+    width: 100svh;
+    margin-top: 10px;
+  }
+
+  .inner-content {
+    padding:20px;
+
+  }
+
+  .main-content {
+
+  }
+}

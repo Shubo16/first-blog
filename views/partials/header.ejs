@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>BlogSite</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-content" id="header-content">
+            <div class="header-title__container">
+                <a href="/">
+                    <h1 class="header-title">Illusive Studios</h1>
+                </a>
+            </div>
+            <nav class="header-nav">
+                <div class="header-nav__list-container">
+                    <ul class="container-1">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/trending">Trending</a></li>
+                        <li><a href="/blog">Blogs</a></li>
+
+                    </ul>
+                    <ul class="container-2">
+                        <li><a href="/my-story">My story</a></li>
+                        <% if (locals.user) { %>
+                            <li>Welcome <%= user.name %></li>
+                            <li><a href="/logout">Logout</a></li>
+                        <% } else { %>
+                            <li><a href="/login">Login</a></li>
+                            <li><a href="/register">Register</a></li>
+                        <% } %>
+                    </ul>
+                </div>
+            </nav>
+        
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+            <div class="fullscreen-menu" id="fullscreenMenu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog">Blogs</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="/my-story">My story</a></li>
+                    <% if (locals.user) { %>
+                        <li>Welcome <%= user.name %></li>
+                        <li><a href="/logout">Logout</a></li>
+                    <% } else { %>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Register</a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>
