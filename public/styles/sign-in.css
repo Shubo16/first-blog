@@ -1,3 +1,20 @@
+.full-screen-container {
+    background-image: url(/images/e45a2c3a8e76936a2d668d6d2e6bf17e.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
 .form {
     display: flex;
     justify-content: center;
